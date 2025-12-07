@@ -10,9 +10,7 @@ System Runner turns everyday systems—product processes, team rituals, personal
 
 System Runner brings structure to the fluid work of modern teams and individuals.
 
----
-
-## **Why System Runner?**
+## Why System Runner?
 
 Most processes hide inside docs, wikis, tribal memory, or Slack threads.
 System Runner makes them:
@@ -25,11 +23,9 @@ System Runner makes them:
 
 This creates clarity, adaptability, and shared understanding — without heavy process overhead.
 
----
+## Core Concepts
 
-## **Core Concepts**
-
-### **1. System Specification**
+### 1. System Specification
 
 A system is defined as:
 
@@ -66,7 +62,7 @@ Systems are intentionally lightweight, composable, and readable.
 
 ---
 
-### **2. Step Runner**
+### 2. Step Runner
 
 System Runner provides a class that executes systems step-by-step:
 
@@ -88,7 +84,7 @@ This lets you:
 
 ---
 
-### **3. Triggers (Optional & Composable)**
+### 3. Triggers (Optional & Composable)
 
 Triggers determine *when* a system runs.
 
@@ -153,21 +149,19 @@ export const teamFeatureReview: SystemSpec<
 };
 ```
 
----
-
-## **Philosophy**
+## Philosophy
 
 System Runner is built on three ideas:
 
-### **Systems as Functions**
+### Systems as Functions
 
 Clear inputs, clear outputs, explicit transformations.
 
-### **Steps as Visible Logic**
+### Steps as Visible Logic
 
 Each step represents a meaningful unit of clarity.
 
-### **Triggers as Signals**
+### Triggers as Signals
 
 A system should run when a signal calls for it — not only on a rigid cadence.
 
