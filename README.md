@@ -166,5 +166,3 @@ Each step represents a meaningful unit of clarity.
 A system should run when a signal calls for it — not only on a rigid cadence.
 
 System Runner embraces adaptability without sacrificing structure.
-
-Just say the word.
