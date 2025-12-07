@@ -13,7 +13,7 @@ The goal is clarity, not execution. These are lightweight, readable specificatio
 
 ## System Shape
 
-A system is just a function (`function systemName()`) that returns:
+A system is just a function that returns:
 
 ```ts
 {
