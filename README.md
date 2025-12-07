@@ -13,7 +13,7 @@ The goal is clarity, not execution. These are lightweight, readable specificatio
 
 ## System Shape
 
-A system is just a function that returns:
+A system is just a function (`function systemName()`) that returns:
 
 ```ts
 {
@@ -27,7 +27,37 @@ Nothing more.
 
 This keeps the structure familiar (inputs → transformation → outputs) while remaining extremely simple.
 
----
+## System Function Definition
+
+Every system is defined as a plain function.
+It receives typed inputs and returns an object containing:
+
+- the original inputs  
+- numbered process notes  
+- the output the system produces  
+
+In TypeScript, a system looks like this:
+
+```ts
+export function systemName(
+  input: InputType
+): {
+  inputs: InputType;
+  process: string[];
+  output: OutputType;
+} {
+  return {
+    inputs: input,
+    process: [
+      'Step 1...',
+      'Step 2...',
+      'Step 3...'
+    ],
+    output: {
+      // whatever the system produces
+    }
+  };
+}
 
 ## Trigger Shape
 
@@ -42,8 +72,6 @@ type Trigger =
 ```
 
 Triggers live alongside the system, not inside it.
-
----
 
 ## Example: Weekly Sync System
 
@@ -108,8 +136,6 @@ export const weeklySyncTriggers = [
   },
 ];
 ```
-
----
 
 ## Why This Exists
 
