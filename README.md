@@ -78,6 +78,7 @@ Triggers live alongside the system, not inside it.
 
 ```ts
 // types.ts
+
 export interface ProjectUpdate {
   title: string;
   description: string;
